@@ -7,8 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
 
-
-data = pd.read_csv("C:/Users/iitia/Downloads/archive/data.csv")
+data = pd.read_csv("./data.csv")
 
 X = data.drop(['diagnosis'], axis=1)
 y = data['diagnosis']
